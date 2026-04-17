@@ -152,7 +152,7 @@ def generate_graph_data(text: str, model_id: str):
 
     prompt = """
     Analyze the following text and extract a knowledge graph in a strictly valid Mermaid 'graph LR' format.
-    Text: "{text}"
+    Text: "{INPUT_TEXT}"
 
     1. Extract key entities and categorize them: Person, Organization, Location, Date, Event, Concept, or Action.
     2. Identify relationships in the form of (subject -> predicate -> object).
@@ -189,7 +189,7 @@ def generate_graph_data(text: str, model_id: str):
     - entities: Array of { name: string, type: string, description: string, importance: string }
     - triples: Array of { subject: string, predicate: string, object: string }
     - mermaidCode: string
-    """.format(text=text)
+    """.replace("{INPUT_TEXT}", text)
 
     try:
         response = model.generate_content(
