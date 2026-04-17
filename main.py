@@ -24,11 +24,11 @@ if 'is_generating' not in st.session_state:
 
 # Mapping internal names to Gemini Model IDs
 MODEL_MAP = {
-    "Gemini 1.5 Flash (Global Stable)": "gemini-1.5-flash-latest",
-    "Gemini 1.5 Pro (Deep Stable)": "gemini-1.5-pro-latest",
-    "Gemini 2.0 Flash": "gemini-2.0-flash",
-    "Gemini 3 Flash (Adv Preview)": "gemini-3-flash-preview",
+    "Gemini 2.0 Flash (Fast & Stable)": "gemini-2.0-flash",
+    "Gemini Flash Latest": "gemini-flash-latest",
+    "Gemini 3 Flash (Experimental Adv)": "gemini-3-flash-preview",
     "Gemini 3.1 Pro (Heavy Logic)": "gemini-3.1-pro-preview",
+    "Gemini 3.1 Flash Lite": "gemini-3.1-flash-lite-preview",
 }
 
 # -----------------------------------------------------------------------------
