@@ -526,10 +526,10 @@ export default function App() {
                         onChange={(e) => setSelectedModel(e.target.value)}
                         className="w-full bg-slate-50 border border-slate-100 rounded-xl p-3 text-xs font-bold focus:ring-2 focus:ring-orange-200 outline-none"
                       >
-                        <option value="gemini-1.5-flash">Gemini 1.5 Flash (Most Stable)</option>
-                        <option value="gemini-1.5-pro">Gemini 1.5 Pro (Balanced Analysis)</option>
+                        <option value="gemini-1.5-flash-latest">Gemini 1.5 Flash (Global Stable)</option>
+                        <option value="gemini-1.5-pro-latest">Gemini 1.5 Pro (Deep Stable)</option>
                         <option value="gemini-2.0-flash">Gemini 2.0 Flash (Fastest)</option>
-                        <option value="gemini-3-flash-preview">Gemini 3 Flash (Experimental Adv)</option>
+                        <option value="gemini-3-flash-preview">Gemini 3 Flash (Adv Preview)</option>
                         <option value="gemini-3.1-pro-preview">Gemini 3.1 Pro (Deep extraction)</option>
                       </select>
                     </div>
